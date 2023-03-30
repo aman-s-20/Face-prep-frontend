@@ -18,6 +18,7 @@ const Signup = (props) => {
         setUsername("");
         setPasssword(""); 
         navigate('/home')
+        console.log("Registered successfully...");
     }
 
     useEffect(()=>{

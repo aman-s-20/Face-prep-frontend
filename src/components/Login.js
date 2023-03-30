@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
-
+import React,{useState,useEffect} from 'react'
+import {useNavigate} from 'react-router-dom';
 
 const Login = (props) => {
+    const navigate = useNavigate();
     const [username, setUsername] = useState("");
     const [password, setPasssword] = useState("");
     const handleSubmit = (e)=>{
@@ -10,6 +11,15 @@ const Login = (props) => {
         setUsername("");
         setPasssword("");
     }
+    
+    useEffect(()=>{
+        const auth = localStorage.getItem('user');
+        if(auth){
+            navigate('/home');
+        }
+    },)
+
+
     return <div className="signup">
         <h1>Login page</h1>
         <form className='signup-form'>

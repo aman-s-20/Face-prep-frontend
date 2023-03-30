@@ -7,11 +7,17 @@
    color:  white;
    padding: 5px;
    text-decoration: none;
+
 }
+
 .nav-ul {
     padding: 5px;
     margin: 0px;
     background-color: lightseagreen;
+}
+.nav-right{
+   text-align: right;
+   padding: 5px;
 }
 
 .footer{
