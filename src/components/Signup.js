@@ -3,23 +3,21 @@ import { useState,useEffect } from 'react';
 import {useNavigate} from 'react-router-dom';
 
 
-const Signup = () => {
+const Signup = (props) => {
     const navigate = useNavigate();
     const [name, setName] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPasssword] = useState("");
-    const [userDetail,setUserDetail] = useState([]);
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(name,username,password);
-        setUserDetail(userDetail =>[...userDetail,{name,username,password}]);
-        console.log(userDetail);
         localStorage.setItem("user",JSON.stringify({name,username,password}));
+        props.onAdd({name,username,password});
         setName("");
         setUsername("");
         setPasssword(""); 
-        navigate('/')
+        navigate('/home')
     }
 
     useEffect(()=>{
@@ -27,7 +25,7 @@ const Signup = () => {
         if(auth){
             navigate('/home');
         }
-    },[])
+    },)
 
     return (
         <div className="signup">

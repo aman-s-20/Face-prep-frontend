@@ -10,10 +10,10 @@ const Navbar = ()=>{
     }
     return <div>
        <ul className='nav-ul'>
-        <li><Link to='/'>Home Page</Link></li>
-        <li><Link to='/home'>Login</Link></li>
-        <li>{auth?<Link to='/' onClick ={logout}>Logout</Link> :
+        <li><Link to='/home'>Home Page</Link></li>
+        <li>{auth?<Link to='/signup' onClick ={logout}>Logout</Link> :
         <Link to='/signup'>Sign up</Link>}</li>
+        <li><Link to='/login'>Login</Link></li>
        </ul>
     </div>
 }
