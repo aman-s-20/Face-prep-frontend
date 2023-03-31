@@ -57,7 +57,7 @@ const Home = (props) => {
         <InfiniteScroll
           dataLength={categories.length}
           next={fetchMoreData}
-          hasMore={categories.length !== 100}
+          // hasMore={categories.length !== 100}
           loader={<ScaleLoader
             color="#36d7b7"
             cssOverride={{
