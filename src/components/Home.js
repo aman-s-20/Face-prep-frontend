@@ -24,9 +24,11 @@ const Home = (props) => {
     setLoading(false)
 
   }
+ 
   useEffect(() => {
     updateCategory()
-  },[fetchMoreData])
+     // eslint-disable-next-line
+  },[])
 
   const fetchMoreData = async () => {
     const url = `https://random-data-api.com/api/v2/users?size=${props.size}`;
