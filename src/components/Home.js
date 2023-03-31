@@ -4,6 +4,7 @@ import { ScaleLoader } from 'react-spinners';
 import InfiniteScroll from "react-infinite-scroll-component";
 const Home = (props) => {
   const [categories, setCategories] = useState([])
+    // eslint-disable-next-line
   const [loading, setLoading] = useState(true);
  
 
