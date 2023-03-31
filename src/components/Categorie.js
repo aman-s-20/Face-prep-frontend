@@ -5,7 +5,7 @@ const Categorie = (props) => {
         <>
             <div className="card category">
                 <div className="card-body  ">
-                <img className="avtarimg" src={props.img}/>
+                <img src={props.img} className="avtarimg"  alt="avtar img"/>
                     <h5>Name: {props.name}</h5>
                     <h5>Gender: {props.gender}</h5>
                     <h5>Phone: {props.phone}</h5>

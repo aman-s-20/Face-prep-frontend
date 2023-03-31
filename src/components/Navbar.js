@@ -13,7 +13,7 @@ const Navbar = () => {
         navigate('/login');
     }
     return <div>
-        {auth ?<ul className='nav-ul'>
+        {auth ?<ul className='nav-ul fixed-top'>
             <li><Link to='/home'>Home Page</Link></li>
             <li><Link to='/login' onClick={logout}>Logout ({JSON.parse(auth).name})</Link></li>
             </ul>:

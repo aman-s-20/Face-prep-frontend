@@ -49,7 +49,7 @@ function App() {
         <Routes>
 
           <Route element={<PrivateRoute />}>
-            <Route path='/home' element={<Home />} />
+            <Route path='/home' element={<Home size='5'/>} />
           </Route>
           <Route path='/login' element={<Login getUser={checkUser} />} />
           <Route path='/signup' element={<Signup onAdd={addUser} />} />

@@ -52,3 +52,12 @@
   width: 150px;
 
 }
+
+.allcat{
+  text-align: center;
+  margin-top: 55px;
+  /* padding-top: 25px; */
+}
+.parent-container{
+  margin-bottom: 55px;
+}
