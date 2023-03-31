@@ -42,15 +42,6 @@ const Home = (props) => {
     <>
 
      <h1 className ="allcat" >All Users</h1>
-      {loading && <ScaleLoader
-          color="#36d7b7"
-          cssOverride={{
-            float: 'centre',
-            textAlign: 'center'
-          }}
-
-        />
-      }
       
       <div className='parent-container'>
       
