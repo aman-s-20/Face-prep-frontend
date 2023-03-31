@@ -26,7 +26,7 @@ const Home = (props) => {
   }
   useEffect(() => {
     updateCategory()
-  },[])
+  },)
 
   const fetchMoreData = async () => {
     const url = `https://random-data-api.com/api/v2/users?size=${props.size}`;
