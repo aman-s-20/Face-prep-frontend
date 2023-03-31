@@ -31,13 +31,15 @@
 }
 
 .signup {
-  margin-left: 500px;
+  margin-left: 50%;
+  justify-content: center;
   text-align: center;
   display: inline-block;
   width: 25%;
 }
 .signup-form {
   margin-top: 100px;
+
 }
 
 .category-ul {
